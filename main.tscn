@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dx6o2oi7dgs25"]
+
+[ext_resource type="PackedScene" uid="uid://o7e2r3m07vt3" path="res://Player/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://el5kfguq1g1b" path="res://Item/ground_item.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://d11t83ji8epai" path="res://Furnace/Furnace.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=1882588729]
+
+[node name="GroundItem" parent="." unique_id=1323711552 instance=ExtResource("2_0xm2m")]
+position = Vector2(957, 486)
+
+[node name="GroundItem2" parent="." unique_id=1743844693 instance=ExtResource("2_0xm2m")]
+position = Vector2(959, 172)
+item_type = 2
+amount = 1
+
+[node name="GroundItem3" parent="." unique_id=649484646 instance=ExtResource("2_0xm2m")]
+position = Vector2(160, 166)
+item_type = 3
+amount = 1
+
+[node name="Furnace" parent="." unique_id=1857631735 instance=ExtResource("3_h2yge")]
+position = Vector2(-209, 266)
+
+[node name="Furnace2" parent="." unique_id=597410889 instance=ExtResource("3_h2yge")]
+position = Vector2(1221, 266)
+is_furnace_a = false
+
+[node name="Player" parent="." unique_id=480769827 instance=ExtResource("1_ig7tw")]
+position = Vector2(505, 250)

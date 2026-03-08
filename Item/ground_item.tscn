@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://el5kfguq1g1b"]
+
+[ext_resource type="Script" uid="uid://oav1hyelsj34" path="res://Item/ground_item.gd" id="1_cmmk3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dja4s"]
+radius = 9.91369
+
+[node name="GroundItem" type="Area2D" unique_id=1323711552]
+scale = Vector2(8, 8)
+script = ExtResource("1_cmmk3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1213093447]
+shape = SubResource("CircleShape2D_dja4s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1562989935]

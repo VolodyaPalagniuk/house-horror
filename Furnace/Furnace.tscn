@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d11t83ji8epai"]
+
+[ext_resource type="Script" uid="uid://gdceisxqn5ot" path="res://Furnace/furnace.gd" id="1_wv518"]
+[ext_resource type="Texture2D" uid="uid://uh7cu6syd5h5" path="res://sprites/Game_House_furnace.png" id="2_tfw15"]
+[ext_resource type="Texture2D" uid="uid://bege3wgtrsjdv" path="res://sprites/Game_House_furnace_B.png" id="3_p23pd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tfw15"]
+size = Vector2(208, 272)
+
+[node name="Furnace" type="Area2D" unique_id=1857631735]
+script = ExtResource("1_wv518")
+
+[node name="Sprite_furnace_a" type="Sprite2D" parent="." unique_id=2013762826]
+visible = false
+position = Vector2(0, -116)
+scale = Vector2(8, 8)
+texture = ExtResource("2_tfw15")
+
+[node name="Sprite_furnace_b" type="Sprite2D" parent="." unique_id=4661810]
+visible = false
+position = Vector2(0, -116)
+scale = Vector2(8, 8)
+texture = ExtResource("3_p23pd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=619073394]
+position = Vector2(0, -60)
+shape = SubResource("RectangleShape2D_tfw15")

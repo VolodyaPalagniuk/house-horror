@@ -12,6 +12,7 @@ const SPEED = 350.0
 
 var held_item_type: ItemData.Type = ItemData.Type.NONE
 var held_item_count: int = 0
+var hp = 3
 
 func _ready() -> void:
 	arms_anim.play("nothing")

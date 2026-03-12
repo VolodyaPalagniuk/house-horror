@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://dqjkry367gf7s"]
+
+[ext_resource type="Theme" uid="uid://dulwgqlhqqdqb" path="res://UI/Theme/UI_theme_1.tres" id="1_sdg4j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdg4j"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.44136545, 0.44136554, 0.44136536, 1)
+anti_aliasing = false
+
+[sub_resource type="Theme" id="Theme_m4sf8"]
+HBoxContainer/constants/separation = 80
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_sdg4j")
+
+[sub_resource type="Theme" id="Theme_sitp4"]
+HBoxContainer/constants/separation = 45
+
+[sub_resource type="Gradient" id="Gradient_sdg4j"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m4sf8"]
+gradient = SubResource("Gradient_sdg4j")
+height = 568
+fill_from = Vector2(1, 1)
+fill_to = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_m4sf8"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sitp4"]
+gradient = SubResource("Gradient_m4sf8")
+height = 568
+
+[sub_resource type="Gradient" id="Gradient_twoqh"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_yr6sh"]
+gradient = SubResource("Gradient_twoqh")
+height = 568
+fill_from = Vector2(1, 0)
+
+[sub_resource type="Gradient" id="Gradient_egeul"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ig30t"]
+gradient = SubResource("Gradient_egeul")
+height = 568
+fill_to = Vector2(0.0018315018, 0.034798536)
+
+[node name="TabMenu" type="CanvasLayer" unique_id=613709993]
+
+[node name="MainControl" type="PanelContainer" parent="." unique_id=281086251]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_m4sf8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainControl" unique_id=733412879]
+layout_direction = 1
+layout_mode = 2
+theme = ExtResource("1_sdg4j")
+
+[node name="MapPlaceholder" type="ColorRect" parent="MainControl/HBoxContainer" unique_id=801566471]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="HBoxContainer" parent="MainControl/HBoxContainer" unique_id=481949120]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_sitp4")
+
+[node name="BarA" type="TextureProgressBar" parent="MainControl/HBoxContainer/VBoxContainer" unique_id=742088200]
+layout_mode = 2
+value = 41.0
+fill_mode = 3
+texture_under = SubResource("GradientTexture2D_m4sf8")
+texture_progress = SubResource("GradientTexture2D_sitp4")
+
+[node name="BarB" type="TextureProgressBar" parent="MainControl/HBoxContainer/VBoxContainer" unique_id=545560814]
+layout_mode = 2
+value = 74.0
+fill_mode = 3
+texture_under = SubResource("GradientTexture2D_yr6sh")
+texture_progress = SubResource("GradientTexture2D_ig30t")

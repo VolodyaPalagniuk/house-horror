@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://o7e2r3m07vt3" path="res://Player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://el5kfguq1g1b" path="res://Item/ground_item.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://d11t83ji8epai" path="res://Furnace/Furnace.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dqjkry367gf7s" path="res://UI/TabMenu.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D" unique_id=1882588729]
 
@@ -28,3 +29,5 @@ is_furnace_a = false
 
 [node name="Player" parent="." unique_id=480769827 instance=ExtResource("1_ig7tw")]
 position = Vector2(505, 250)
+
+[node name="TabMenu" parent="." unique_id=613709993 instance=ExtResource("4_1bvp3")]

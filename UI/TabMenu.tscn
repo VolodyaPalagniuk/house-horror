@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dqjkry367gf7s"]
 
+[ext_resource type="Script" uid="uid://c4pv7pvxyx7cp" path="res://UI/tab_menu.gd" id="1_m4sf8"]
 [ext_resource type="Theme" uid="uid://dulwgqlhqqdqb" path="res://UI/Theme/UI_theme_1.tres" id="1_sdg4j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdg4j"]
@@ -54,6 +55,7 @@ height = 568
 fill_to = Vector2(0.0018315018, 0.034798536)
 
 [node name="TabMenu" type="CanvasLayer" unique_id=613709993]
+script = ExtResource("1_m4sf8")
 
 [node name="MainControl" type="PanelContainer" parent="." unique_id=281086251]
 anchors_preset = 15
@@ -73,20 +75,20 @@ clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="HBoxContainer" parent="MainControl/HBoxContainer" unique_id=481949120]
+[node name="BarsContainer" type="HBoxContainer" parent="MainControl/HBoxContainer" unique_id=481949120]
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_sitp4")
 
-[node name="BarA" type="TextureProgressBar" parent="MainControl/HBoxContainer/VBoxContainer" unique_id=742088200]
+[node name="BarA" type="TextureProgressBar" parent="MainControl/HBoxContainer/BarsContainer" unique_id=742088200]
 layout_mode = 2
 value = 41.0
 fill_mode = 3
 texture_under = SubResource("GradientTexture2D_m4sf8")
 texture_progress = SubResource("GradientTexture2D_sitp4")
 
-[node name="BarB" type="TextureProgressBar" parent="MainControl/HBoxContainer/VBoxContainer" unique_id=545560814]
+[node name="BarB" type="TextureProgressBar" parent="MainControl/HBoxContainer/BarsContainer" unique_id=545560814]
 layout_mode = 2
 value = 74.0
 fill_mode = 3

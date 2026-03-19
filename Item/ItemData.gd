@@ -12,7 +12,7 @@ const DATA = {
 	Type.BURGER: {
 		"texture": preload("res://sprites/Game_House_burger.png"),       # Звичайна картинка
 		"hframes": 1,
-		"vframes": 1, # Обов'язково 1, щоб не різало!
+		"vframes": 1,
 		"max_stack": 1
 	},
 	Type.ENERGY_DRINK: {

@@ -1,8 +1,8 @@
 extends Area2D
 
 @export var item_type: ItemData.Type = ItemData.Type.FIREWOOD
-@export var amount: int = 3 # Скільки штук лежить у цій купі
-@export var is_infinite: bool = false # ГАЛОЧКА ДЛЯ ХОЛУ!
+@export var amount: int = 3 
+@export var is_infinite: bool = false
 
 @onready var sprite = $Sprite2D
 
@@ -11,7 +11,6 @@ func _ready():
 		var info = ItemData.DATA[item_type]
 		sprite.texture = info["texture"]
 		
-		# Задаємо обидва параметри, щоб бургер на землі був цілим
 		sprite.hframes = info["hframes"]
 		sprite.vframes = info["vframes"]
 		

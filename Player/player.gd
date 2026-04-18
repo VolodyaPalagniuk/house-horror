@@ -85,8 +85,11 @@ func handle_inventory_input():
 func try_interact():
 	var areas = pickup_zone.get_overlapping_areas()
 	for area in areas:
-		if area.has_method("pick_up"):
+		if area is Interactable:
+			area.interact(self)
+			break
 			
+		elif area.has_method("pick_up"):
 			# Якщо руки порожні, АБО в руках такий самий предмет
 			if held_item_type == ItemData.Type.NONE or held_item_type == area.item_type:
 				

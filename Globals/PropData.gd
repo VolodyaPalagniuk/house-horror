@@ -12,7 +12,7 @@ enum Type {
 
 const DATA = {
 	Type.PILE_FIREWOOD: {
-		"scene_path": "res://Objects/Dresser.tscn", # Шлях до сцени (яку ми створимо пізніше)
+		"scene_path": "res://Objects/PipleFirewood.tscn", # Шлях до сцени (яку ми створимо пізніше)
 	},
 	Type.DRESSER: {
 		"scene_path": "res://Objects/Dresser.tscn", # Шлях до сцени (яку ми створимо пізніше)
@@ -23,7 +23,7 @@ const DATA = {
 		"is_mimic": true
 	},
 	Type.CAMPFIRE: {
-		"scene_path": "res://Objects/MiniCampfire.tscn"
+		"scene_path": "res://Objects/Campfire.tscn"
 	},
 	Type.FURNACE_A: {
 		"scene_path": "res://Objects/Furnace.tscn",

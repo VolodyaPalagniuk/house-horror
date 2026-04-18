@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bnbfn1w53w1tl"]
+
+[ext_resource type="Script" uid="uid://4o033n3f403w" path="res://Objects/PileFirewood/PileFirewood.gd" id="1_nfokd"]
+[ext_resource type="Texture2D" uid="uid://hcn8a10wobb8" path="res://sprites/Game_House_PileFirewood.png" id="2_nfokd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nfokd"]
+radius = 27.831244
+
+[node name="PileFirewood" type="Area2D" unique_id=473166867]
+scale = Vector2(8, 8)
+script = ExtResource("1_nfokd")
+give_amount = null
+metadata/_custom_type_script = "uid://drrcj7xfyayjy"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=824435908]
+texture = ExtResource("2_nfokd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1345563525]
+position = Vector2(0, 11)
+shape = SubResource("CircleShape2D_nfokd")

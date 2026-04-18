@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://o7e2r3m07vt3" path="res://Player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bs35tstbo7v8h" path="res://Items/GroundItem.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bnbfn1w53w1tl" path="res://Objects/PileFirewood/PileFirewood.tscn" id="3_h2yge"]
 
 [node name="Main" type="Node2D" unique_id=1882588729]
 
@@ -17,3 +18,6 @@ item_type = 2
 
 [node name="GroundItem3" parent="." unique_id=84120911 instance=ExtResource("2_0xm2m")]
 position = Vector2(1176, 177)
+
+[node name="PileFirewood" parent="." unique_id=473166867 instance=ExtResource("3_h2yge")]
+position = Vector2(161, 201)

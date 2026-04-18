@@ -10,10 +10,3 @@ position = Vector2(505, 250)
 
 [node name="GroundItem" parent="." unique_id=1059841504 instance=ExtResource("2_0xm2m")]
 position = Vector2(956, 295)
-
-[node name="GroundItem2" parent="." unique_id=550725968 instance=ExtResource("2_0xm2m")]
-position = Vector2(956, 70)
-item_type = 2
-
-[node name="GroundItem3" parent="." unique_id=84120911 instance=ExtResource("2_0xm2m")]
-position = Vector2(1176, 177)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biy2vuw27mv2k"
-path="res://.godot/imported/Game_House_Light.png-0342ae278b85b5b58330f27d9412029e.ctex"
+uid="uid://bksamv1xv0n0h"
+path="res://.godot/imported/Game_House_Rotten_Burger.png-8008dbc761a575ec446da080bf4c5861.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Game_House_Light.png"
-dest_files=["res://.godot/imported/Game_House_Light.png-0342ae278b85b5b58330f27d9412029e.ctex"]
+source_file="res://sprites/Game_House_Rotten_Burger.png"
+dest_files=["res://.godot/imported/Game_House_Rotten_Burger.png-8008dbc761a575ec446da080bf4c5861.ctex"]
 
 [params]
 

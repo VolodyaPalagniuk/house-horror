@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://o7e2r3m07vt3" path="res://Player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bs35tstbo7v8h" path="res://Items/GroundItem.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bnbfn1w53w1tl" path="res://Objects/PileFirewood/PileFirewood.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bmgup0vb3jeco" path="res://Objects/Furnace/Furnace.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D" unique_id=1882588729]
 
@@ -21,3 +22,10 @@ position = Vector2(1176, 177)
 
 [node name="PileFirewood" parent="." unique_id=473166867 instance=ExtResource("3_h2yge")]
 position = Vector2(161, 201)
+
+[node name="Furnace" parent="." unique_id=1427228540 instance=ExtResource("4_1bvp3")]
+position = Vector2(801, 479)
+
+[node name="Furnace2" parent="." unique_id=144917549 instance=ExtResource("4_1bvp3")]
+position = Vector2(1334, 471)
+is_furnace_a = false

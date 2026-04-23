@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bmgup0vb3jeco"]
+
+[ext_resource type="Script" uid="uid://b227bxkbo61bb" path="res://Objects/Furnace/Furnace.gd" id="1_8gm8v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xl83"]
+radius = 26.942358
+
+[node name="Furnace" type="Area2D" unique_id=1427228540]
+scale = Vector2(8, 8)
+script = ExtResource("1_8gm8v")
+metadata/_custom_type_script = "uid://drrcj7xfyayjy"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=990058858]
+vframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1143059947]
+position = Vector2(0, 12)
+shape = SubResource("CircleShape2D_3xl83")

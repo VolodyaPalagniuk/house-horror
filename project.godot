@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 PropData="*uid://rhcag7we07w5"
 ItemData="*uid://c4mp546wsxh2r"
+GameManager="*uid://bt62mf3nd6rvt"
 
 [input]
 

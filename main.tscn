@@ -4,28 +4,31 @@
 [ext_resource type="PackedScene" uid="uid://bs35tstbo7v8h" path="res://Items/GroundItem.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bnbfn1w53w1tl" path="res://Objects/PileFirewood/PileFirewood.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bmgup0vb3jeco" path="res://Objects/Furnace/Furnace.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dlaigts2pao5q" path="res://Room/Room.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=1882588729]
 
+[node name="Room" parent="." unique_id=62868574 instance=ExtResource("5_lquwl")]
+
+[node name="Furnace" parent="." unique_id=1427228540 instance=ExtResource("4_1bvp3")]
+position = Vector2(213, 964)
+
+[node name="Furnace2" parent="." unique_id=144917549 instance=ExtResource("4_1bvp3")]
+position = Vector2(1066, 964)
+is_furnace_a = false
+
 [node name="Player" parent="." unique_id=480769827 instance=ExtResource("1_ig7tw")]
-position = Vector2(505, 250)
+position = Vector2(556, 527)
 
 [node name="GroundItem" parent="." unique_id=1059841504 instance=ExtResource("2_0xm2m")]
-position = Vector2(956, 295)
+position = Vector2(936, 1034)
 
 [node name="GroundItem2" parent="." unique_id=550725968 instance=ExtResource("2_0xm2m")]
-position = Vector2(956, 70)
+position = Vector2(725, 661)
 item_type = 2
 
 [node name="GroundItem3" parent="." unique_id=84120911 instance=ExtResource("2_0xm2m")]
-position = Vector2(1176, 177)
+position = Vector2(1082, 522)
 
 [node name="PileFirewood" parent="." unique_id=473166867 instance=ExtResource("3_h2yge")]
-position = Vector2(161, 201)
-
-[node name="Furnace" parent="." unique_id=1427228540 instance=ExtResource("4_1bvp3")]
-position = Vector2(801, 479)
-
-[node name="Furnace2" parent="." unique_id=144917549 instance=ExtResource("4_1bvp3")]
-position = Vector2(1334, 471)
-is_furnace_a = false
+position = Vector2(207, 424)

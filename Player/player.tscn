@@ -7,7 +7,7 @@
 radius = 93.13431
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hvfyp"]
-size = Vector2(192, 248)
+size = Vector2(192, 160)
 
 [sub_resource type="Animation" id="Animation_fhl08"]
 length = 0.001
@@ -291,6 +291,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" unique_id=480769827]
+top_level = true
 script = ExtResource("1_4ntmi")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=549215902]
@@ -306,7 +307,7 @@ position = Vector2(0, 16)
 shape = SubResource("CircleShape2D_btcbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=643604847]
-position = Vector2(0, 16)
+position = Vector2(0, 60)
 shape = SubResource("RectangleShape2D_hvfyp")
 
 [node name="ItemHolder" type="Node2D" parent="." unique_id=1305121248]

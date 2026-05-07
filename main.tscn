@@ -7,8 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://dlaigts2pao5q" path="res://Room/Room.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=1882588729]
+y_sort_enabled = true
 
 [node name="Room" parent="." unique_id=62868574 instance=ExtResource("5_lquwl")]
+
+[node name="Player" parent="." unique_id=480769827 instance=ExtResource("1_ig7tw")]
+position = Vector2(556, 527)
 
 [node name="Furnace" parent="." unique_id=1427228540 instance=ExtResource("4_1bvp3")]
 position = Vector2(213, 964)
@@ -17,11 +21,8 @@ position = Vector2(213, 964)
 position = Vector2(1066, 964)
 is_furnace_a = false
 
-[node name="Player" parent="." unique_id=480769827 instance=ExtResource("1_ig7tw")]
-position = Vector2(556, 527)
-
 [node name="GroundItem" parent="." unique_id=1059841504 instance=ExtResource("2_0xm2m")]
-position = Vector2(936, 1034)
+position = Vector2(661, 1028)
 
 [node name="GroundItem2" parent="." unique_id=550725968 instance=ExtResource("2_0xm2m")]
 position = Vector2(725, 661)

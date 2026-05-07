@@ -295,23 +295,25 @@ top_level = true
 script = ExtResource("1_4ntmi")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=549215902]
+position = Vector2(0, -140)
 zoom = Vector2(0.7, 0.7)
 process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 2.5
 
 [node name="PickupZone" type="Area2D" parent="." unique_id=663613643]
+position = Vector2(0, -140)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickupZone" unique_id=2075661085]
 position = Vector2(0, 16)
 shape = SubResource("CircleShape2D_btcbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=643604847]
-position = Vector2(0, 60)
+position = Vector2(0, -80)
 shape = SubResource("RectangleShape2D_hvfyp")
 
 [node name="ItemHolder" type="Node2D" parent="." unique_id=1305121248]
-position = Vector2(0, -180)
+position = Vector2(0, -320)
 scale = Vector2(8, 8)
 
 [node name="HeldItemSprite" type="Sprite2D" parent="ItemHolder" unique_id=1551422218]
@@ -319,6 +321,7 @@ vframes = 3
 frame = 2
 
 [node name="Visuals" type="Node2D" parent="." unique_id=972920864]
+position = Vector2(0, -140)
 scale = Vector2(8, 8)
 
 [node name="LegRight" type="Sprite2D" parent="Visuals" unique_id=2084843330]

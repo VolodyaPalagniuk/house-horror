@@ -6,14 +6,15 @@
 radius = 26.942358
 
 [node name="Furnace" type="Area2D" unique_id=1427228540]
+y_sort_enabled = true
 scale = Vector2(8, 8)
 script = ExtResource("1_8gm8v")
 metadata/_custom_type_script = "uid://drrcj7xfyayjy"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=990058858]
-position = Vector2(0, -39.25)
+position = Vector2(0, -30.75)
 vframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1143059947]
-position = Vector2(0, -27.25)
+position = Vector2(0, -18.75)
 shape = SubResource("CircleShape2D_3xl83")

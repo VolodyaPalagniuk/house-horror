@@ -5,7 +5,6 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_tfavu"]
 
 [node name="GroundItem" type="Area2D" unique_id=1059841504]
-y_sort_enabled = true
 scale = Vector2(8, 8)
 script = ExtResource("1_1mqcm")
 

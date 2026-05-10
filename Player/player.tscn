@@ -292,7 +292,6 @@ _data = {
 
 [node name="Player" type="CharacterBody2D" unique_id=480769827]
 top_level = true
-y_sort_enabled = true
 script = ExtResource("1_4ntmi")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=549215902]
@@ -322,7 +321,6 @@ vframes = 3
 frame = 2
 
 [node name="Visuals" type="Node2D" parent="." unique_id=972920864]
-y_sort_enabled = true
 position = Vector2(0, -140)
 scale = Vector2(8, 8)
 
